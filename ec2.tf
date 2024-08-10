@@ -3,7 +3,5 @@ resource "aws_instance" "db_instane" {
     vpc_security_group_ids = var.security_group
     instance_type = var.instance_type
 
-    tags = {
-        var.tags
-    }
+    tags = var.tags
 }
